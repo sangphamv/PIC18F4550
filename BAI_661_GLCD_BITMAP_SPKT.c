@@ -1,0 +1,16 @@
+
+#INCLUDE<TV_PICKIT2_SHIFT_1.C>
+#INCLUDE<TV_PICKIT2_SHIFT_GLCD128X64.C>
+
+   VOID MAIN ()
+   {
+      SET_UP_PORT_IC_CHOT () ;
+      SETUP_GLCD (GLCD_GRAPHIC_MODE) ;
+      GLCD_MAU_NEN (0) ;
+      GLCD_XUAT_ANH (64, 64, 32, 0) ;
+      GDRAM_VDK_TO_GDRAM_GLCD_ALL () ;
+
+      WHILE (TRUE)
+      {}
+   }
+
